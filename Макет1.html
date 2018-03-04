@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel=stylesheet href="Макет1а.css"
+   <link rel=stylesheet href="Макет1а.css">
 </head>
 <body>
     <header>
-     <img class="photo" src="logo.png" alt="kinobase.ru"/>
-     <span id="logo">Открой мир кино с нами</span>
+    <div id="logo">
+        <img src="logo.png" alt="Kinobase.ru">
+        <span>Открой мир кино с нами</span>
+      </div>
        <nav>
             <ul class="menu">
             <li><a href="#">кино </a></li>
@@ -19,31 +21,46 @@
             <li><a href="#">программы и шоу</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-    <div>
+    <div class="secondheader">
         <ul class="account">
             <li><a href="#">Создать аккаунт</a></li>
             <li><a href="#">Войти</a></li>
         </ul>
         <label>
        <input class="search" type="submit"value="Поиск">
-       <input type="text" name="question" placeholder="Что будем искать)"/>
-        </label>
-    </div>
+       <input class="search1" type="text" name="question" placeholder="Что будем искать)"/>
+       <a class="expand" href="#">Что ищут?</a>
+       <a class="expand" href="#">* Расширенный поиск</a>
+       </label>
+   </div>
+      </header>
+        <main>
     <form class="rate">
      <span id="rating">Рейтинг ожиданий</span>
     </form>
-    <section>
-    	<div class="wrapper">
-    	<input type="radio" name="point" id="madagaskar" checked>
-        <input type="radio" name="point" id="starwars">
-        </div>
+        <section>
         <div class="slider">
-        <div class="slide1"><img src="madagaskar.png" alt="madagaskar3"/></div>
-</div>
-    </section>
+             <button type='button' class="arrow">&lt;</button>
+             <button type='button' class="arrow">&gt;</button>
+             <div class="slide1"><img src="madagaskar.png" alt="madagaskar3"/></div>
+            </div>
+            <aside class="description">
+            <h2>Мадагаскар 3</h2>
+            <h1>Madagaskar 3:Europe's Most Wanted</h1>
+            <p class="date">0</p>
+            <p class="date">7</p>
+            <p class="date2">На сайте</p>
+            <p class="date1">июня</p>
+            <p>Бегемтотиха Глори, жираф Мелман, зебра Марти и, конечно, лев Алекс регают вернуться в Нью-Йорк после их побега в Африку. Из-за механических инноваций пресловутого шимпанзе и сумасшедших пингвинов, весь план рушится</p>
+            </aside>
+       <aside class="buttonrow">
+            <button type='button'><img src="кнопка1.png" alt="мадагаскар"></button>
+            <button type='button'><img src="2 кнопка.png" alt="мадагаскар"></button>
+            <button type='button'><img src="3 кнопка.png" alt="мадагаскар"></button>
+        </aside>
+        </section>
 </main>
+
 
 </body>
 </html>
